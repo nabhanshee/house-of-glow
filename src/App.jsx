@@ -124,6 +124,7 @@ function App() {
 
             <motion.div
               whileHover={{ y: -10 }}
+              whileTap={{ scale: 0.97 }}
               key={candle.id}
               className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-[35px] overflow-hidden shadow-2xl"
             >
