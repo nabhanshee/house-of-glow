@@ -206,22 +206,22 @@ function App() {
 
           <img
             src="/Glass_1.jpeg"
-            className="rounded-[25px] h-72 w-full object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Couple.jpeg"
-            className="rounded-[25px] h-72 w-full object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Lotus.jpeg"
-            className="rounded-[25px] h-72 w-full object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Sun_Moon.jpeg"
-            className="rounded-[25px] h-72 w-full object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
         </div>
@@ -232,22 +232,22 @@ function App() {
 
           <img
             src="/Candle1.jpeg"
-            className="rounded-[25px] h-72 w-full object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Candle2.jpeg"
-            className="rounded-[25px] h-72 w-full object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Candle3.jpeg"
-            className="rounded-[25px] h-72 w-full object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Candle11.jpeg"
-            className="rounded-[25px] h-72 w-full object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
         </div>
@@ -259,22 +259,22 @@ function App() {
 
           <img
             src="/Candle5.jpeg"
-            className="rounded-[25px] h-72 w-full object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Candle6.jpeg"
-            className="rounded-[25px] h-72 w-full object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Candle10.jpeg"
-            className="rounded-[25px] h-72 w-full object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Candle8.jpeg"
-            className="rounded-[25px] h-72 w-full object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
         </div>
@@ -286,22 +286,22 @@ function App() {
 
           <img
             src="/Candle9.jpeg"
-            className="rounded-[25px] h-72 w-full object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Candle7.jpeg"
-            className="rounded-[25px] h-72 w-full object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Candle4.jpeg"
-            className="rounded-[25px] h-72 w-full object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Candle12.jpeg"
-            className="rounded-[25px] h-72 w-full object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
         </div>
