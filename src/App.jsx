@@ -81,7 +81,7 @@ function App() {
 
         <motion.a
           whileHover={{ scale: 1.05 }}
-          href="https://wa.me/9403230348"
+          href="https://wa.me/919403230348"
           target="_blank"
           className="mt-10 bg-amber-300 text-black px-8 py-4 rounded-full font-bold z-10"
         >
@@ -324,7 +324,7 @@ function App() {
         </p>
 
         <a
-          href="https://wa.me/9403230348"
+          href="https://wa.me/919403230348"
           target="_blank"
           className="inline-block mt-10 bg-green-500 px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition duration-300"
         >
