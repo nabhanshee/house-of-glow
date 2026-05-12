@@ -20,7 +20,7 @@ function App() {
     {
       id: 3,
       name: "Antique Rosewood",
-      image: "/Pillar2.jpeg",
+      image: "Pillar2.jpeg",
       description: "A delicate cluster of full-bloom roses captured in a muted pink hue for a romantic, vintage feel."
     },
   ];
@@ -30,39 +30,39 @@ function App() {
     <div className="bg-gradient-to-b from-[#1a120b] via-[#2c1810] to-black text-white min-h-screen overflow-hidden">
 
       {/* NAVBAR */}
-      <br />
+        <br />
+        
+        <nav className="flex justify-center items-center px-6 py-8">
 
-      <nav className="flex justify-center items-center px-6 py-8">
+          <div className="text-center">
 
-        <div className="text-center">
+            <h1 className="text-3xl md:text-4xl font-black tracking-[8px] text-amber-200 drop-shadow-lg">
+              THE HOUSE OF GLOW
+            </h1>
 
-          <h1 className="text-3xl md:text-4xl font-black tracking-[3px] md:tracking-[8px] text-amber-200 drop-shadow-lg">
-            THE HOUSE OF GLOW
-          </h1>
+            <p className="text-amber-100 text-sm md:text-lg mt-4 tracking-[4px] uppercase">
+              Luxury Candles
+            </p>
 
-          <p className="text-amber-100 text-sm md:text-lg mt-4 tracking-[4px] uppercase">
-            Luxury Candles
-          </p>
+            <p className="text-amber-300 text-xs md:text-sm mt-2 tracking-[6px] uppercase">
+              Nagpur
+            </p>
 
-          <p className="text-amber-300 text-xs md:text-sm mt-2 tracking-[6px] uppercase">
-            Nagpur
-          </p>
+          </div>
 
-        </div>
-
-      </nav>
+        </nav>
 
       {/* HERO SECTION */}
 
       <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 relative">
 
-        <div className="absolute w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-amber-500/20 blur-3xl rounded-full"></div>
+        <div className="absolute w-[500px] h-[500px] bg-amber-500/20 blur-3xl rounded-full"></div>
 
         <motion.h1
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-4xl md:text-8xl font-black leading-tight z-10"
+          className="text-5xl md:text-8xl font-black leading-tight z-10"
         >
           Luxury Candles
           <br />
@@ -73,37 +73,30 @@ function App() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="mt-8 text-amber-100 max-w-2xl text-base md:text-lg leading-8 z-10"
+          className="mt-8 text-amber-100 max-w-2xl text-lg leading-8 z-10"
         >
           Handcrafted aesthetic candles designed to transform
           your space into a warm luxurious experience.
         </motion.p>
 
-        {/* BUTTONS */}
-
-        <div className="flex flex-col md:flex-row gap-5 mt-10 z-10">
-
-          <motion.a
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.96 }}
-            href="https://wa.me/9194032 30348"
-            target="_blank"
-            className="bg-amber-300 text-black px-8 py-4 rounded-full font-bold"
-          >
-            Order On WhatsApp
-          </motion.a>
-
-          <motion.a
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.96 }}
-            href="https://instagram.com/thehouseofglow.in"
-            target="_blank"
-            className="border border-amber-200 text-amber-100 px-8 py-4 rounded-full font-bold hover:bg-amber-200 hover:text-black transition duration-300"
-          >
-            Order On Instagram
-          </motion.a>
-
-        </div>
+        <motion.a
+          whileHover={{ scale: 1.05 }}
+          href="https://wa.me/919403230348"
+          target="_blank"
+          className="mt-10 bg-amber-300 text-black px-8 py-4 rounded-full font-bold z-10"
+        >
+          Order On WhatsApp
+        </motion.a>
+        
+        
+        <motion.a
+          whileHover={{ scale: 1.05 }}
+          href="https://instagram.com/thehouseofglow.in"
+          target="_blank"
+          className="mt-10 bg-amber-300 text-black px-8 py-4 rounded-full font-bold z-10"
+        >
+          Order On Instagram
+        </motion.a>
 
       </section>
 
@@ -118,20 +111,19 @@ function App() {
             Our Collection
           </p>
 
-          <h2 className="text-4xl md:text-6xl font-black">
+          <h2 className="text-5xl md:text-6xl font-black">
             Signature Candles
           </h2>
 
         </div>
 
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-3 gap-10">
 
           {candles.map((candle) => (
 
             <motion.div
-              whileHover={{ y: -10, scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
+              whileHover={{ y: -10 }}
               key={candle.id}
               className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-[35px] overflow-hidden shadow-2xl"
             >
@@ -141,14 +133,14 @@ function App() {
                 <img
                   src={candle.image}
                   alt={candle.name}
-                  className="w-full md:h-[550px] h-[420px] object-contain bg-[#140d08] p-4 hover:scale-105 transition duration-700"
+                  className="h-[450px] w-full object-cover hover:scale-110 transition duration-700"
                 />
 
               </div>
 
               <div className="p-8">
 
-                <h3 className="text-2xl md:text-3xl font-bold text-amber-100">
+                <h3 className="text-3xl font-bold text-amber-100">
                   {candle.name}
                 </h3>
 
@@ -179,13 +171,13 @@ function App() {
           About The Brand
         </p>
 
-        <h2 className="text-4xl md:text-6xl font-black leading-tight">
+        <h2 className="text-5xl md:text-6xl font-black leading-tight">
           More Than Candles.
           <br />
           It's An Experience.
         </h2>
 
-        <p className="text-gray-300 mt-10 max-w-3xl mx-auto leading-9 text-base md:text-lg">
+        <p className="text-gray-300 mt-10 max-w-3xl mx-auto leading-9 text-lg">
           THE HOUSE OF GLOW creates handcrafted luxury candles
           inspired by premium interiors, cozy evenings and elegant lifestyles.
           Every candle is designed to bring warmth, aesthetics and unforgettable fragrance into your space.
@@ -204,119 +196,116 @@ function App() {
             Aesthetic Glow
           </p>
 
-          <h2 className="text-4xl md:text-6xl font-black">
+          <h2 className="text-5xl md:text-6xl font-black">
             Crafted For Modern Spaces
           </h2>
 
         </div>
 
-        {/* IMAGE GRID */}
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
 
           <img
             src="/Glass_1.jpeg"
-            className="rounded-[20px] w-full md:h-[450px] h-[220px] object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Couple.jpeg"
-            className="rounded-[20px] w-full md:h-[450px] h-[220px] object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Lotus.jpeg"
-            className="rounded-[20px] w-full md:h-[450px] h-[220px] object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Sun_Moon.jpeg"
-            className="rounded-[20px] w-full md:h-[450px] h-[220px] object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
         </div>
-
         <br />
         <br />
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
 
           <img
             src="/Candle1.jpeg"
-            className="rounded-[20px] w-full md:h-[450px] h-[220px] object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Candle2.jpeg"
-            className="rounded-[20px] w-full md:h-[450px] h-[220px] object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Candle3.jpeg"
-            className="rounded-[20px] w-full md:h-[450px] h-[220px] object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Candle11.jpeg"
-            className="rounded-[20px] w-full md:h-[450px] h-[220px] object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
         </div>
 
         <br />
         <br />
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
+        
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
 
           <img
             src="/Candle5.jpeg"
-            className="rounded-[20px] w-full md:h-[450px] h-[220px] object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Candle6.jpeg"
-            className="rounded-[20px] w-full md:h-[450px] h-[220px] object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Candle10.jpeg"
-            className="rounded-[20px] w-full md:h-[450px] h-[220px] object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Candle8.jpeg"
-            className="rounded-[20px] w-full md:h-[450px] h-[220px] object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
         </div>
 
         <br />
         <br />
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
+        
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
 
           <img
             src="/Candle9.jpeg"
-            className="rounded-[20px] w-full md:h-[450px] h-[220px] object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Candle7.jpeg"
-            className="rounded-[20px] w-full md:h-[450px] h-[220px] object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Candle4.jpeg"
-            className="rounded-[20px] w-full md:h-[450px] h-[220px] object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
           <img
             src="/Candle12.jpeg"
-            className="rounded-[20px] w-full md:h-[450px] h-[220px] object-cover"
+            className="w-full object-cover md:h-[450px] h-[300px]"
           />
 
         </div>
-
+      
       </section>
 
 
@@ -324,13 +313,13 @@ function App() {
 
       <section className="px-6 py-28 text-center">
 
-        <h2 className="text-4xl md:text-7xl font-black leading-tight">
+        <h2 className="text-5xl md:text-7xl font-black leading-tight">
           Let Your
           <br />
           Space Glow
         </h2>
 
-        <p className="mt-8 text-gray-300 text-base md:text-lg">
+        <p className="mt-8 text-gray-300 text-lg">
           Handmade luxury candles available in Nagpur.
         </p>
 
@@ -341,13 +330,11 @@ function App() {
         >
           Contact On WhatsApp
         </a>
-
         <br />
-
         <a
           href="https://instagram.com/thehouseofglow.in"
           target="_blank"
-          className="inline-block mt-10 border border-amber-200 text-amber-100 px-10 py-5 rounded-full font-bold text-lg hover:bg-amber-200 hover:text-black transition duration-300"
+          className="inline-block mt-10 bg-green-500 px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition duration-300"
         >
           Contact On Instagram
         </a>
