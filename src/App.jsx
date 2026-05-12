@@ -86,7 +86,7 @@ function App() {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.96 }}
-            href="https://wa.me/919403230348"
+            href="https://wa.me/9194032 30348"
             target="_blank"
             className="bg-amber-300 text-black px-8 py-4 rounded-full font-bold"
           >
@@ -141,7 +141,7 @@ function App() {
                 <img
                   src={candle.image}
                   alt={candle.name}
-                  className="w-full md:h-[450px] h-[420px] object-contain bg-black hover:scale-105 transition duration-700"
+                  className="w-full md:h-[550px] h-[420px] object-contain bg-[#140d08] p-4 hover:scale-105 transition duration-700"
                 />
 
               </div>
